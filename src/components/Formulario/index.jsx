@@ -67,9 +67,11 @@ const Formulario = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className={style.resultado}>
-                        {riscoIMC()}
-                    </div>
+                    {resultado > 0 && (
+                        <div className={style.resultado}>
+                            {riscoIMC()}
+                        </div>
+                    )}
                 </div>
             </form>
         </div>
